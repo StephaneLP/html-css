@@ -1,0 +1,26 @@
+{
+  "name": "html-css-projet-7-spa33",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephaneLP/html-css-projet-7-spa33.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephaneLP/html-css-projet-7-spa33/issues"
+  },
+  "homepage": "https://github.com/StephaneLP/html-css-projet-7-spa33#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}

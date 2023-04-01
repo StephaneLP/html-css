@@ -1,0 +1,48 @@
+@mixin img-common($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    margin-top: 40px;
+    position: relative;
+    bottom: -20px;
+}
+
+@mixin a-presentation() {
+    a {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%);
+        background-color: $btn-pres-bg;
+        color: $btn-pres-color;
+
+        &:hover {
+            background-color: $btn-pres-bg-hover;
+            color: $btn-pres-bg;
+        }
+    }
+}
+
+@mixin a-galerie() {
+    a {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        bottom: -20px;
+        transform: translate(-50%);
+        background-color: $btn-gal-bg;
+        color: $btn-gal-color;
+
+        &:hover {
+            background-color: $btn-gal-bg-hover;
+        }
+    }
+}
+
+@mixin imgbg(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

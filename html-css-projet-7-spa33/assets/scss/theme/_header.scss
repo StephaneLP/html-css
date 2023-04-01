@@ -1,0 +1,55 @@
+header {
+    padding: 10px 0;
+    box-shadow: $shadow;
+
+    .navbar-brand {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .navbar-nav {
+        padding-left: 0;
+        
+        .nav-item {
+            padding: 0 15px;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                margin: 0 auto;
+                background-color: $sous-titre-color;
+                transition: all 0.2s ease-in;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            .nav-link {
+                color: $color;
+                padding: 0;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+/* ANIMATIONS */
+
+
+// header nav ul li::after {
+//     content: "";
+//     display: block;
+//     width: 0;
+//     height: 2px;
+//     margin: 0 auto;
+//     background-color: #84d6eb;
+//     transition: all 0.4s ease-in;
+// }
+
+// header nav ul li:hover::after {
+//     width: 100%;
+// }

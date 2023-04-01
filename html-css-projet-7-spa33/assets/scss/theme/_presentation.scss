@@ -1,0 +1,42 @@
+#presentation {
+    margin: 50px auto 80px;
+    text-align: center;
+
+    h1 {
+        &::after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 2px;
+            margin: 0 auto;
+            background-color: $sous-titre-color;
+        }
+    }
+
+    #presentation-imgl {
+        @include img-common("../img/chiens-adoption-spa.jpg");
+        @include a-presentation();
+    }
+    
+    #presentation-imgr {
+        @include img-common("../img/chats-adoption-spa.jpg");
+        @include a-presentation();       
+    }
+
+    #presentation-2{
+        margin: 100px 0 50px;
+
+        img {
+            max-height: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        a {
+            color: $color;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+    }
+}
+
